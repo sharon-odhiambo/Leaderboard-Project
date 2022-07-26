@@ -2,10 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
+    <title>Leaderboard</title>
 </head>
 <body>
-    <h1>Hello webpack!</h1>
+    <h1>Leaderboard</h1>
+    <div class="details">
+        <div class="scorecard">
+            <p><span>Recent Scores</span><button type="button" class="but">Refresh</button></p>
+            <div class="results">
+                <table class="list-board">
+                    <tr><td>Sharon: 100</td></tr>
+                    <tr><td>Shah: 150</td></tr>
+                    <tr><td>John: 10</td></tr>
+                    <tr><td>Doe: 175</td></tr>
+                </table>
+            </div>
+        </div>
+        <div>
+            <form id="form" class="form1">
+                <h2>Add your score</h2>
+                <div>
+                    <input type="text" id="title" class="title1" placeholder="Your name" required>
+                 </div>
+                <div>
+                    <input type="text" id="author" class="author1" placeholder="Your score" required>
+                </div>
+                <button type="submit" class="add">Submit</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
