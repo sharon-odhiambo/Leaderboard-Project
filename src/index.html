@@ -10,24 +10,19 @@
     <h1>Leaderboard</h1>
     <div class="details">
         <div class="scorecard">
-            <p><span>Recent Scores</span><button type="button" class="but">Refresh</button></p>
+            <p><span>Recent Scores</span><button type="button" class="button-refresh">Refresh</button></p>
             <div class="results">
-                <table class="list-board">
-                    <tr><td>Sharon: 100</td></tr>
-                    <tr><td>Shah: 150</td></tr>
-                    <tr><td>John: 10</td></tr>
-                    <tr><td>Doe: 175</td></tr>
-                </table>
+                <table class="list-board"><tbody></tbody></table>
             </div>
         </div>
         <div>
             <form id="form" class="form1">
                 <h2>Add your score</h2>
                 <div>
-                    <input type="text" id="title" class="title1" placeholder="Your name" required>
+                    <input type="text" id="user" name="user" placeholder="Your name" required>
                  </div>
                 <div>
-                    <input type="text" id="author" class="author1" placeholder="Your score" required>
+                    <input type="text" id="score" name="score" placeholder="Your score" required>
                 </div>
                 <button type="submit" class="add">Submit</button>
             </form>

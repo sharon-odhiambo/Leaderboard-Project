@@ -2,10 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
-<script defer src="main.js"></script></head>
+    <title>Leaderboard</title>
+<script defer src="/Leaderboard-Project/main.bundle.js"></script></head>
 <body>
-    <h1>Hello webpack!</h1>
+    <h1>Leaderboard</h1>
+    <div class="details">
+        <div class="scorecard">
+            <p><span>Recent Scores</span><button type="button" class="button-refresh">Refresh</button></p>
+            <div class="results">
+                <table class="list-board"><tbody></tbody></table>
+            </div>
+        </div>
+        <div>
+            <form id="form" class="form1">
+                <h2>Add your score</h2>
+                <div>
+                    <input type="text" id="user" name="user" placeholder="Your name" required>
+                 </div>
+                <div>
+                    <input type="text" id="score" name="score" placeholder="Your score" required>
+                </div>
+                <button type="submit" class="add">Submit</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

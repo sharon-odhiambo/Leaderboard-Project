@@ -13,7 +13,7 @@
 }
 
 tr {
-  width: 20%;
+  width: 100%;
 }
 
 tr:nth-child(odd) {
