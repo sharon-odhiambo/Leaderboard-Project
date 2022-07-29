@@ -1,13 +1,14 @@
-const fetchUser = async() => {
-    const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/qt7inFzYl1SGwGP9B7it/scores', {
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/qKuQrD8AL1Per5aSN5Z6/scores';
+const fetchUser = async (user, scores) => {
+    const response = await fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;',
       },
-      body: JSON.stringify({ user: `${user}`, score: scores }),
+      body: JSON.stringify({ user: `${user}`, score: +scores }),
     });
-    const scoreBoard = await response.json();
-     return (scoreBoard.result)
+    const hitAPI = await response.json();
+  return hitAPI.result;
   };
 
   export { fetchUser }
