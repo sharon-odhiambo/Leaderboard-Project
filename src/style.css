@@ -46,6 +46,7 @@ button {
 }
 
 input {
+  display: flex;
   border: 2px solid black;
   margin: 2px 12px;
   padding: 1px 4px;

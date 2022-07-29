@@ -1,29 +1,27 @@
 // import _ from 'lodash';
-import { fetchUser } from './modules/fetch';
-import { displayScores } from './modules/ui';
+import { fetchUser } from './modules/fetch.js';
+import { displayScores } from './modules/ui.js';
 import './style.css';
 
 const refreshButton = document.querySelector('.button-refresh');
 const submit = document.querySelector('.form1');
-const userName = document.getElementById('user1').value;
-const userScore = document.getElementById('score1').value;
-
+const { user, score } = submit;
 
 submit.addEventListener('submit', (e) => {
   e.preventDefault();
-  console.log(userName, userScore)
-  // fetchUser(userName, userScore);
-})
+  fetchUser(user.value, score.value);
+  submit.reset();
+});
 
-refreshButton.addEventListener('click', async() => {
+refreshButton.addEventListener('click', async () => {
   window.location.reload();
-  const getResults = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/qKuQrD8AL1Per5aSN5Z6/scores');
+  const getResults = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/UYuxCEKHoViyOLelfSd5/scores');
   const hitAPI = await getResults.json();
   displayScores(hitAPI.result);
-})
+});
 
-window.addEventListener('DOMContentLoaded', async() => {
-  const getResults = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/qKuQrD8AL1Per5aSN5Z6/scores');
+window.addEventListener('DOMContentLoaded', async () => {
+  const getResults = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/UYuxCEKHoViyOLelfSd5/scores');
   const hitAPI = await getResults.json();
   displayScores(hitAPI.result);
 });
