@@ -1,4 +1,3 @@
-// import _ from 'lodash';
 import { fetchUser } from './modules/fetch.js';
 import { displayScores } from './modules/ui.js';
 import './style.css';
