@@ -1,3 +1,8 @@
+body {
+  background-image: (url('./bg.jpg'));
+  background-color: aqua;
+}
+
 .details {
   display: flex;
   justify-content: space-between;

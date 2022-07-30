@@ -3,7 +3,7 @@ import { fetchUser } from './modules/fetch.js';
 import { displayScores } from './modules/ui.js';
 import './style.css';
 
-const refreshButton = document.querySelector('.button-refresh');
+const refreshButton = document.querySelector('.button-refresh');;
 const submit = document.querySelector('.form1');
 const { user, score } = submit;
 
