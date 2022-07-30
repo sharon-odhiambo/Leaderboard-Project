@@ -1,5 +1,9 @@
 # Leaderboard-Project
 - This project allows the leader to add their name and scores to the leaderboard and display the added scores when refreshed. It has been built using Webpack, ES6 modules and the Leaderboard API.
+- Below is a screenshot of the project
+
+![image](https://user-images.githubusercontent.com/88780311/181906173-67778547-c5b5-4403-9c1c-17bdce33ef20.png)
+
 
 ## Built With
 
