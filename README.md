@@ -24,6 +24,8 @@ To get a local copy for practice or as a template, follow these simple steps.
 
 Access the live source on -https://github.com/sharon-odhiambo/Leaderboard-Project
 
+You can access the live link at Leaderboard(https://sharon-odhiambo.github.io/Leaderboard-Project/)
+
 Copy the **https** or **SSH** address on the code
 Clone the repository using your editor 
 
